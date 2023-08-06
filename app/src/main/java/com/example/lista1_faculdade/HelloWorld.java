@@ -18,4 +18,10 @@ public class HelloWorld extends AppCompatActivity {
         Intent intent = new Intent(this, Sorteio.class);
         startActivity(intent);
     }
+
+    public void goToAnotherPage2(View view){
+
+        Intent intent = new Intent(this, ClickButton.class);
+        startActivity(intent);
+    }
 }
