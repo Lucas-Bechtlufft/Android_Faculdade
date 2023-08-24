@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/headerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastro de Contato"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:background="@android:color/darker_gray"/>
+
+    <EditText
+        android:id="@+id/nomeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerTextView"
+        android:hint="Nome"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/telefoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nomeEditText"
+        android:hint="Telefone e Área"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/enderecoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/telefoneEditText"
+        android:hint="Endereço"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/cidadeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enderecoEditText"
+        android:hint="Cidade"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:id="@+id/estadoZipLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cidadeEditText"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/estadoEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Estado"/>
+
+        <EditText
+            android:id="@+id/zipEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Zip"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/estadoZipLayout"
+        android:hint="Email"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/aniversarioEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailEditText"
+        android:hint="Data de Aniversário (dd/mm/aaaa)"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/cadastrarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/aniversarioEditText"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>
